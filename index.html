@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+    <link rel="manifest" href="./icon/site.webmanifest">
+    <title>Life</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #c83f49;
+        }
+
+        #seconds {
+            text-align: center;
+            width: 80%;
+            font-size: calc(5vw);
+            color: #fff;
+        }
+
+        .seed {
+            position: absolute;
+            background-color: black;
+            border-radius: 50%;
+            opacity: 0.5;
+        }
+
+        .seed:nth-child(1) {
+            width: 10px;
+            height: 10px;
+            top: 10%;
+            left: 20%;
+        }
+
+        .seed:nth-child(2) {
+            width: 12px;
+            height: 12px;
+            top: 30%;
+            left: 50%;
+        }
+
+        .seed:nth-child(3) {
+            width: 15px;
+            height: 15px;
+            top: 60%;
+            left: 30%;
+        }
+
+        .seed:nth-child(4) {
+            width: 18px;
+            height: 18px;
+            top: 80%;
+            left: 70%;
+        }
+
+        .seed:nth-child(5) {
+            width: 10px;
+            height: 10px;
+            top: 40%;
+            left: 80%;
+        }
+
+        .seed:nth-child(6) {
+            width: 14px;
+            height: 14px;
+            top: 70%;
+            left: 10%;
+        }
+
+        .seed:nth-child(7) {
+            width: 12px;
+            height: 12px;
+            top: 50%;
+            left: 90%;
+        }
+
+        .seed:nth-child(8) {
+            width: 15px;
+            height: 15px;
+            top: 20%;
+            left: 40%;
+        }
+
+        .seed:nth-child(9) {
+            width: 11px;
+            height: 11px;
+            top: 75%;
+            left: 55%;
+        }
+
+        .seed:nth-child(10) {
+            width: 13px;
+            height: 13px;
+            top: 15%;
+            left: 70%;
+        }
+
+        .seed:nth-child(11) {
+            width: 14px;
+            height: 14px;
+            top: 5%;
+            left: 10%;
+        }
+
+        .seed:nth-child(12) {
+            width: 12px;
+            height: 12px;
+            top: 85%;
+            left: 30%;
+        }
+
+        .seed:nth-child(13) {
+            width: 10px;
+            height: 10px;
+            top: 25%;
+            left: 60%;
+        }
+
+        .seed:nth-child(14) {
+            width: 11px;
+            height: 11px;
+            top: 40%;
+            left: 20%;
+        }
+
+        .seed:nth-child(15) {
+            width: 13px;
+            height: 13px;
+            top: 90%;
+            left: 50%;
+        }
+
+        .seed:nth-child(16) {
+            width: 15px;
+            height: 15px;
+            top: 10%;
+            left: 80%;
+        }
+
+        .seed:nth-child(17) {
+            width: 12px;
+            height: 12px;
+            top: 30%;
+            left: 90%;
+        }
+
+        .seed:nth-child(18) {
+            width: 10px;
+            height: 10px;
+            top: 60%;
+            left: 10%;
+        }
+
+        .seed:nth-child(19) {
+            width: 14px;
+            height: 14px;
+            top: 40%;
+            left: 70%;
+        }
+
+        .seed:nth-child(20) {
+            width: 16px;
+            height: 16px;
+            top: 75%;
+            left: 40%;
+        }
+
+        .seed:nth-child(21) {
+            width: 13px;
+            height: 13px;
+            top: 85%;
+            left: 60%;
+        }
+
+        .seed:nth-child(22) {
+            width: 12px;
+            height: 12px;
+            top: 20%;
+            left: 30%;
+        }
+
+        .seed:nth-child(23) {
+            width: 11px;
+            height: 11px;
+            top: 65%;
+            left: 20%;
+        }
+
+        .seed:nth-child(24) {
+            width: 10px;
+            height: 10px;
+            top: 60%;
+            left: 40%;
+        }
+
+        .seed:nth-child(25) {
+            width: 15px;
+            height: 15px;
+            top: 30%;
+            left: 25%;
+        }
+
+        .seed:nth-child(26) {
+            width: 14px;
+            height: 14px;
+            top: 35%;
+            left: 75%;
+        }
+
+        .seed:nth-child(27) {
+            width: 13px;
+            height: 13px;
+            top: 25%;
+            left: 85%;
+        }
+
+        .seed:nth-child(28) {
+            width: 12px;
+            height: 12px;
+            top: 15%;
+            left: 15%;
+        }
+
+        .seed:nth-child(29) {
+            width: 11px;
+            height: 11px;
+            top: 5%;
+            left: 40%;
+        }
+
+        .seed:nth-child(30) {
+            width: 10px;
+            height: 10px;
+            top: 95%;
+            left: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div class="seed"></div>
+    <div id="seconds">567884923</div>
+    <script>
+        const targetDate = new Date('2042-06-13T01:00:00Z');
+        function updateSeconds() {
+            const now = new Date();
+            const diffInSeconds = Math.floor((targetDate - now) / 1000);
+            document.getElementById('seconds').innerText = diffInSeconds;
+        }
+        setInterval(updateSeconds, 1000);
+        updateSeconds();
+    </script>
+</body>
+
+</html>
